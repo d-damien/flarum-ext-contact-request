@@ -1,0 +1,7 @@
+d-damien-contact-request:
+  admin:
+    my_cool_key: My Cool Key
+
+  forum:
+    send: Send a contact request
+    sent: Contact request sent !

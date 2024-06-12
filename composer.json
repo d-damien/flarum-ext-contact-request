@@ -1,0 +1,54 @@
+{
+    "name": "d-damien/flarum-contact-request",
+    "description": "Add a button to users profile that sends a request for contact/DM",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2.0"
+    },
+    "authors": [
+        {
+            "name": "d-damien",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DDamien\\ContactRequest\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Contact Request",
+            "category": "",
+            "icon": {
+                "name": "fas fa-paper-plane",
+                "color": "white",
+                "backgroundColor": "green"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": false,
+                "prettier": false,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": false,
+                "styleci": false
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
