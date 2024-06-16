@@ -12,7 +12,9 @@
 namespace DDamien\ContactRequest;
 
 use Flarum\Extend;
+use Flarum\Api\Serializer\BasicUserSerializer;
 use DDamien\ContactRequest\Controller\SendController;
+use DDamien\ContactRequest\Notification\ContactRequestSent;
 
 
 return [
@@ -25,5 +27,9 @@ return [
     new Extend\Locales(__DIR__.'/locale'),
 
     (new Extend\Routes('forum'))
-        ->post('/u/{username}/contact-request', 'contact-request.send', SendController::class),
+        ->post('/u/{user}/contact-request', 'contact-request.send', SendController::class),
+    (new Extend\Notification())
+        ->type(ContactRequestSent::class, BasicUserSerializer::class, ['alert', 'email']),
+    (new Extend\View)
+        ->namespace('d-damien-contact-request', __DIR__.'/views'),
 ];
