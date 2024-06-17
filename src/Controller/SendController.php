@@ -32,6 +32,7 @@ class SendController implements RequestHandlerInterface
         $this->notifications->sync(
             new ContactRequestSent($actor), [$user]
         );
+
         return (new Response());
     }
 }
