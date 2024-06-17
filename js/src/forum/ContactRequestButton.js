@@ -2,7 +2,7 @@ import Button from 'flarum/common/components/Button';
 import icon from 'flarum/common/helpers/icon';
 import LoadingIndicator from 'flarum/common/components/LoadingIndicator'
 
-class ContactRequestButton extends Button {
+export default class ContactRequestButton extends Button {
   buttonText = ''
   loading = null
 

@@ -6,7 +6,7 @@ d-damien-contact-request:
     send: Send a contact request
     sent: Contact request sent !
     notifications:
-      sent: User {user} wishes to contact you: check your email
+      sent: User {user} wishes to contact you; check your email
     settings:
       notify_sent: A member requests to contact you
 
