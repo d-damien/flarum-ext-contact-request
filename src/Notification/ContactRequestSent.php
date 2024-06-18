@@ -10,10 +10,14 @@ use Flarum\User\User;
 class ContactRequestSent implements BlueprintInterface, MailableInterface
 {
     public $user;
+    public $forumName;
+    public $actorProfileUrl;
 
-    public function __construct(User $user)
+    public function __construct(User $user, string $forumName, string $actorProfileUrl)
     {
         $this->user = $user;
+        $this->forumName = $forumName;
+        $this->actorProfileUrl = $actorProfileUrl;
     }
 
     public function getSubject()
@@ -49,6 +53,6 @@ class ContactRequestSent implements BlueprintInterface, MailableInterface
 
     public function getEmailSubject(TranslatorInterface $translator)
     {
-        return $translator->trans('d-damien-contact-request.email.contact_request_sent.subject');
+        return $translator->trans('d-damien-contact-request.email.subject.sent');
     }
 }

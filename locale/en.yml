@@ -11,5 +11,18 @@ d-damien-contact-request:
       notify_sent: A member requests to contact you
 
   email:
-    contact_request_sent:
-      subject: A forum user wishes to contact you
+    subject:
+      sent: A forum user wishes to contact you
+    body:
+      sent:
+        Hello, {recipient_display_name} !
+
+        You receive this email because you are a member of {forum_name}.
+
+        A forum user, {actor_display_name}, has requested to contact you via email.
+        Their email address is {actor_email}. If you wish to answer (and show your email address to them),
+        you can just reply to the present message.
+
+        Their forum profile is {actor_profile_url}.
+
+        Regards !
