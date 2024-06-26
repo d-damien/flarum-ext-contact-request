@@ -20,9 +20,9 @@ d-damien-contact-request:
         You receive this email because you are a member of {forum_name}.
 
         A forum user, {actor_display_name}, has requested to contact you via email.
-        Their email address is {actor_email}. If you wish to answer (and show your email address to them),
-        you can just reply to the present message.
+        Their email address is {actor_email}.
+        # If you wish to answer (and show your email address to them), you can just reply to the present message.
 
         Their forum profile is {actor_profile_url}.
 
-        Regards !
+        See you on the forum !

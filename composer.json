@@ -17,9 +17,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Flarum\\Notification\\": "src/Flarum/Notification"
-        },
-        "exclude-from-classmap": ["/vendor/flarum/core/src/Notification/NotificationMailer.php"]
+            "DDamien\\ContactRequest\\": "src/"
+        }
     },
     "extra": {
         "flarum-extension": {
