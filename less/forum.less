@@ -1,6 +1,16 @@
 // adjust button padding in menu
 nav.UserPage-nav li.item-contact-request > button {
   padding-left: 28px;
+  background: var(--primary-color);
+  color: white;
+  &:hover {
+    opacity: 0.9;
+  }
+
+  // show all button text
+  & > span.Button-label {
+    white-space: wrap;
+  }
 }
 @media (max-width: 767px) {
   nav.UserPage-nav li.item-contact-request > button {
