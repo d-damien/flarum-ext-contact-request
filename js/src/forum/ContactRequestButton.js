@@ -1,6 +1,7 @@
 import Button from 'flarum/common/components/Button';
 import icon from 'flarum/common/helpers/icon';
 import LoadingIndicator from 'flarum/common/components/LoadingIndicator'
+import SentModal from './SentModal'
 
 export default class ContactRequestButton extends Button {
   buttonText = ''
@@ -21,9 +22,9 @@ export default class ContactRequestButton extends Button {
       url: '/u/' + this.attrs.userId + '/contact-request',
     })
     .then(_ => {
+      app.modal.show(SentModal)
       this.buttonText = app.translator.trans('d-damien-contact-request.forum.sent')
       this.loading = false
-      m.redraw()
     })
   }
 

@@ -5,6 +5,7 @@ d-damien-contact-request:
   forum:
     send: Send a contact request
     sent: Contact request sent !
+    sent_body: An email with your info has been sent to this person, who may then write you back.
     notifications:
       sent: User {user} wishes to contact you; check your email
     settings:
